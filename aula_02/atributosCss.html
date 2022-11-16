@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #repetirHorizontal{
+        background-image: url(https://th.bing.com/th/id/OIP.MxXHEW9uH-liVMyzmyE2lgHaHa?pid=ImgDet&rs=1);
+        background-repeat: repeat-x;
+
+    }
+    #repetirVertical{
+        background-image: url(https://th.bing.com/th/id/OIP.MxXHEW9uH-liVMyzmyE2lgHaHa?pid=ImgDet&rs=1);
+        background-repeat: repeat-y;
+    }
+
+    #naoRepete{
+        background-image: url(https://th.bing.com/th/id/OIP.MxXHEW9uH-liVMyzmyE2lgHaHa?pid=ImgDet&rs=1);
+        background-repeat: no-repeat;
+        background-position: right;
+        /*
+        background-position: right;
+        background-position: center;
+        background-position: left;
+        */
+    }
+    .caixa{
+        width: 800px;
+        height: 400px;
+        border: 1px solid black;
+        color: #fff;
+    }
+    .circular{
+        border: 1px solid black;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<body>
+    <ul>
+        <li><p style="color: darkcyan;">cor por nome</p></li>
+        <li><p style="color: #00ff00;">cor por hexadecimal</p></li>
+        <li><p style="color: rgb(100, 10, 255);">cor por RGB</p></li>
+        <li><p style="color: rgba(100, 10, 255, 0.5);">RGB com alpha</p></li>
+    </ul>
+
+    <ol>
+        <li style="background-color: lime;"><span style="color: white;">cor</span> de fundo por nome</li>
+        <li style="background-color: #ffbaba;">cor de fundo por hexadecimal</li>
+        <li style="background-color: rgb(128,30,30);">cor de fundo com RGB</li>
+        <li style="background-color: rgba(200, 0, 0, 0.5);"> cor de fundo com RGBA</li>
+        <li style="color: #fff; background-image: url(https://th.bing.com/th/id/OIP.MxXHEW9uH-liVMyzmyE2lgHaHa?pid=ImgDet&rs=1) ;">tem uma imagem aqui</li>
+        <li style="background-image: url(https://th.bing.com/th/id/OIP.MxXHEW9uH-liVMyzmyE2lgHaHa?pid=ImgDet&rs=1); background-repeat: no-repeat; color: #fff;">tem uma imagem que estava se repetindo</li>
+        <li>
+            <div id="repetirHorizontal" class="caixa">
+                repete na Horizontal
+            </div>
+        </li>
+        <li>
+            <div id="repetirVertical" class="caixa">
+                repete na Vertical
+            </div>
+        </li>
+        <li>
+            <div id="naoRepete" class="caixa" style="color: #000;">
+                nao repete
+            </div>
+        </li>
+        <li style="border: black 1px solid;">borda misterio</li>
+        <li>
+            <div class="circular">bordas</div>
+        </li>
+        <li>
+            <div style="border: 1px solid black; border-top-left-radius: 10px;border-bottom-right-radius: 10px; width: 100px;">colgate</div>
+        </li>
+
+        <li>
+            <div style="background-color: gray; width: 300px; height: 300px; margin: 10px 20px 30px 40px; padding: 100px 10px 50px 10px;"> conteudo aqui</div>
+        </li>
+
+        <li>
+            <span style="font-size: 200px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;">texto</span>
+        </li>
+    </ol>
+</body>
+</html>
